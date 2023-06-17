@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-        int n;
+	int n;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-        /* Tell the user whether the number generated is positive or negative */
-        if (n > 0)
-                printf("%d is positive\n", n);
-        else if (n == 0)
-                printf("%d is zero\n", n);
-        else if (n < 0)
-                printf("%d is negative\n", n);
-        return (0);
+	/* Tell the user whether the number generated is positive or negative */
+	if (n > 0)
+	printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	return (0);
 
 }
