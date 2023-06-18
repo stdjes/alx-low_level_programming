@@ -18,13 +18,16 @@ int main(void)
 		{
 			if (i != d && i < d) /* skip equal combinations, skip repeated combination*/
 			{
-				putchar (i + '0');
-				putchar (d + '0');
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(d + '0');
+				if (i != 8 || d != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-		}
+	}
 	putchar('\n');
 	return (0);
 }
