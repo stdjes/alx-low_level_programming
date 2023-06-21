@@ -2,7 +2,7 @@
 
 /**
  * _putchar - writes character to stdout
- *@char: data type to be written
+ *@c: data type to be written
  *
  * Return: value of 1 on success
  */
@@ -11,7 +11,7 @@ int _putchar(char c);
 /**
  * main - begins program execution
  *
- * Return: value of 1 on success
+ * Return: value of 0 on success
  */
 int main(void)
 {
@@ -24,6 +24,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	
-	return (1);
+	return (0);
 }
