@@ -13,4 +13,5 @@
  * On error, -1 is returned and errno is set appropriately
  */
 int _putchar(char);
+void print_alphabet(void);
 #endif /* MAIN_H_INCLUDED */
