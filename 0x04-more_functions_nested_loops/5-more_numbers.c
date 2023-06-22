@@ -5,24 +5,29 @@
  */
 void more_numbers(void)
 {
-	int a, b;
+	int a, b, c;
 
-	a = 48;
+	c = 0;
 
-	while (a < 58)
+	while (c < 10)
 	{
-		write(1, &a, 1);
-		a++;
-	}
+		a = 48;
 
-	b = 48;
-	a = 49;
+		while (a < 58)
+		{
+			write(1, &a, 1);
+			a++;
+		}
 
-	while (b < 53)
-	{
-		_putchar(a);
-		_putchar(b);
-		b++;
+		b = 48, a = 49;
+
+		while (b < 53)
+		{
+			_putchar(a);
+			_putchar(b);
+			b++;
+		}
+		c++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
