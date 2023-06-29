@@ -3,48 +3,33 @@
 #include <time.h>
 
 /**
- * auto_gen_pswd - Generate a random password of a given length.
- * @char_length: The desired length of the password.
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
  *
- * Return: The generated password as a string.
- */
-char *auto_gen_pswd(int char_length)
-{
-	char *pswd = malloc((char_length + 1) * sizeof(char));
-	int i;
-
-	if (pswd == NULL)
-	{
-		fprintf(stderr, "Memory allocation failed.\n");
-		exit(EXIT_FAILURE);
-	}
-
-	srand(time(NULL));
-
-	/*Generate a random ASCII character between 33, 126*/
-	for (i = 0; i < char_length; i++)
-	{
-		pswd[i] = rand() % 94 + 33;
-	}
-	pswd[char_length] = '\0';
-
-	return (pswd);
-}
-
-/**
- * main - start of program that generates a random password
- *
- * Return: 0, always sucessful
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int length = 16; /*select the desired length of the password*/
+	int pswd[100];
+	int c, sum, n;
 
-	char *pswd = auto_gen_pswd(length);
+	sum = 0;
 
-	printf("Your Password is: %s\n", pswd);
-	free(pswd);
+	srand(time(NULL));
+
+	for (c = 0; c < 100; c++)
+	{
+		pswd[c] = rand() % 78;
+		sum += (pswd[c] + '0');
+		putchar(pswd[c] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
+	}
 
 	return (0);
 }
-
