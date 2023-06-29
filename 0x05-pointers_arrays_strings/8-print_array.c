@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 	int q;			/*position counter*/
 
 	if (n <= 0)
-		fprintf(stderr, "fu");
+		fputs("", stderr);
 
 	for (q = 0; q < n - 1; q++)
 	{
