@@ -17,7 +17,7 @@ char *_strcpy(char *dest, char *src)
 
 
 	if (dest == NULL) /*Check if dest is empty*/
-		return(0);
+		return (0);
 
 
 	if (src == NULL) /*Check if src is empty*/
