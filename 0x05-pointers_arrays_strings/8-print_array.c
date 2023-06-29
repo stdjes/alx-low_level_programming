@@ -10,7 +10,7 @@ void print_array(int *a, int n)
 {
 	int q;			/*position counter*/
 
-	if (n == 0)
+	if (n <= 0)
 		return;
 
 	for (q = 0; q < n - 1; q++)
