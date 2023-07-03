@@ -4,21 +4,28 @@
 /**
  * rot13 - encodes a string with rot 13
  *
- * @str: string to be encoded
+ * @s: string to be encoded
  *
  * Return: returns the encodec string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	char *ptr = str;
+	int i;
+	int j;
+	char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rotstr[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*ptr != '\0')
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		char offset = (*ptr >= 'a' && *ptr <= 'z') ? 'a' : 'A';
-
-		if ((*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= 'a' && *ptr <= 'z'))
-			*ptr = ((*ptr - offset + 13) % 26) + offset;
-		ptr++;
+		for (j = 0; j < 52; j++)
+		{
+			if (s[i] == str[j])
+			{
+				s[i] = rotstr[j];
+				break;
+			}
+		}
 	}
-	return (str);
+	return (s);
 }
