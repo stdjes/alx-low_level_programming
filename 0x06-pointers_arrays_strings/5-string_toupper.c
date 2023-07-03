@@ -11,9 +11,9 @@
 char *string_toupper(char *str)
 {
 	int i = 0;
-	size_t lenstr = strlen(str);
-	if (lenstr == 0)
-		return(NULL);
+
+	if (str[0] == '\0')
+		return (0);
 
 	while (str[i] != '\0')
 	{
