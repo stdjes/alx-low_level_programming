@@ -10,21 +10,22 @@
  */
 char *leet(char *str)
 {
-	int i = 0;
+	char *ptr = str;
+	char *leet = "aAeEoOtTlL";
+	char *leet_X = "4433007711";
+	int i;
 
-	while (str[i] != '\0')
+	while (*ptr != '\0')
 	{
-		if (str[i] == 'A' || str[i] == 'a')
-			str[i] = '4';
-		else if (str[i] == 'E' || str[i] == 'e')
-			str[i] = '3';
-		else if (str[i] == 'O' || str[i] == 'o')
-			str[i] = '0';
-		else if (str[i] == 'T' || str[i] == 't')
-			str[i] = '7';
-		else if (str[i] == 'L' || str[i] == 'l')
-			str[i] = '1';
-		i++;
+		for (i = 0; leet[i] != '\0'; i++)
+		{
+			if (*ptr == leet[i])
+			{
+				*ptr = leet_X[i];
+				break;
+			}
+		}
+		ptr++;
 	}
 	return (str);
 }
