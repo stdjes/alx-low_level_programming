@@ -78,4 +78,5 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int nat_sqrt_recursion(int n, int r);
 int _is_prime(int n, int i);
+int pal_detect(char *s, int i, int len);
 #endif /* MAIN_H_INCLUDED */
