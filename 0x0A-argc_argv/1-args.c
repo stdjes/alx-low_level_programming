@@ -11,6 +11,7 @@
  */
 int main(int _argc, char **_argv)
 {
-	printf("%d", _argc);
+(void) _argv; /*Ignore argv to enable program run without errors*/
+	printf("%d\n", _argc - 1);
 	return (0);
 }
