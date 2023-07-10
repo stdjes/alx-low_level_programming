@@ -20,6 +20,9 @@ char *create_array(unsigned int size, char c)
 
 	newArray = malloc(sizeof(unsigned int) * size);
 
+	if (newArray == NULL)
+		return (NULL);
+
 	for (i = 0; i < size; i++)
 		newArray[i] = c;
 	return (newArray);
