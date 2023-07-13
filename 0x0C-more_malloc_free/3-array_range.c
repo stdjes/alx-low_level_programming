@@ -32,4 +32,5 @@ int *array_range(int min, int max)
 		array_of_integers[i] = min + i;
 
 	return (array_of_integers);
+	free(array_of_integers);
 }
