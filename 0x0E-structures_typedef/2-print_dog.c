@@ -17,7 +17,7 @@ void print_dog(struct dog *d)
 		return;
 
 	/* Print the name */
-	printf("Name: %s\n", (d->name != NULL) ? d->name : "(ni)l");
+	printf("Name: %s\n", (d->name != NULL) ? d->name : "(nil)");
 
 	/* Print the age */
 	if (d->age <  0.0)
