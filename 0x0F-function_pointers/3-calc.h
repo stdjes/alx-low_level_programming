@@ -17,19 +17,49 @@ typedef struct op
 } op_t;
 
 /* Function prototypes for basic arithmetic operations */
-int op_add(int a, int b); /* Adds two numbers */
-int op_sub(int a, int b); /* Subtracts two numbers */
-int op_mul(int a, int b); /* Multiplies two numbers */
-int op_div(int a, int b); /* Divides two numbers */
-int op_mod(int a, int b); /* Calculates the modulo of two numbers */
 
 /**
- * get_op_func - Get the function associated with the operator.
- * @s: The operator as a string.
+ * op_add - Adds two numbers.
+ * @a: The first number.
+ * @b: The second number.
  *
- * Return: Pointer to the function corresponding to the operator,
- * or NULL if the operator is not supported.
+ * Return: The result of the addition.
  */
-int (*get_op_func(char *s))(int, int);
+int op_add(int a, int b);
 
+/**
+ * op_sub - Subtracts two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The result of the subtraction.
+ */
+int op_sub(int a, int b);
+
+/**
+ * op_mul - Multiplies two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The result of the multiplication.
+ */
+int op_mul(int a, int b);
+
+/**
+ * op_div - Divides two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The result of the division.
+ */
+int op_div(int a, int b);
+
+/**
+ * op_mod - Calculates the modulo of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The result of the modulo operation.
+ */
+int op_mod(int a, int b);
 #endif /* _CALC_H_ */

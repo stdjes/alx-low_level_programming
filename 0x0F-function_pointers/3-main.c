@@ -1,6 +1,15 @@
 #include "3-calc.h"
 
 /**
+ * get_op_func - Get the function associated with the operator.
+ * @s: The operator as a string.
+ *
+ * Return: Pointer to the function corresponding to the operator,
+ * or NULL if the operator is not supported.
+ */
+int ((*get_op_func)(char *s))(int, int);
+
+/**
  * main - start of the program.
  * @argc: Number of arguments passed
  * @argv: Array of argument strings
@@ -44,4 +53,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", operation(a, b));
 	return (0);
 }
-
