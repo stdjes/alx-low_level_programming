@@ -7,7 +7,7 @@
  * Return: Pointer to the function corresponding to the operator,
  * or NULL if the operator is not supported.
  */
-int ((*get_op_func)(char *s))(int, int);
+int (*get_op_func(char *s))(int, int);
 
 /**
  * main - start of the program.
