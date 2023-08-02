@@ -5,7 +5,7 @@
  * This function deletes the first node of a linked list
  * of type listint_t.
  * It retrieves the data value 'node_val' stored in the head node
- * and frees the head node, then updates the head to point 
+ * and frees the head node, then updates the head to point
  * to the next node in the list.
  * If the list is empty, it returns 0.
  *
