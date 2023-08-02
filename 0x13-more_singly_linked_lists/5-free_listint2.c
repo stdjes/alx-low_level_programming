@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * free_listint2 - Frees a linked list and sets the head to NULL.
  *
