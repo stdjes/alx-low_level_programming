@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
@@ -13,35 +14,15 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t node_len;
-	const listint_t *node_tr;
 
-	/* Allocate memory for a temporary node pointer */
-	node_tr = (listint_t *)malloc(sizeof(const listint_t));
-
-	/* Check if memory allocation was successful */
-	if (!node_tr)
-	{
-		printf("Error\n");
-		return (0);
-	}
-
-	/* Check if the head pointer is NULL */
-	if (!h)
-		return (-1);
-
-	node_tr = h;
-
-	/* Initialize the node count */
 	node_len = 0;
-
 	/* Traverse the linked list and print each node's data */
-	while (node_tr)
+	while (h)
 	{
-		printf("%d\n", node_tr->n);
-		node_tr = node_tr->next;
+		printf("%d\n", h->n);
+		h = h->next;
 		node_len++;
 	}
-
 	/* Return the number of nodes in the linked list */
 	return (node_len);
 }
