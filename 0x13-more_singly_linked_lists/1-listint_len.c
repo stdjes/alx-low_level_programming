@@ -15,10 +15,10 @@ size_t listint_len(const listint_t *h)
 	node_len = 0;
 	node_tr = h;
 	/* Traverse the linked list and count nodes */
-	while (h)
+	while (node_tr)
 	{
 		node_len++;
-		h = h->next;
+		node_tr = node_tr->next;
 	}
 	return (node_len);
 }
