@@ -12,8 +12,6 @@
 #Ignore _putchar
 _putchar.c
 
-#Ignore files without extension 
-*.*
 #Allow crackme file
 !10*
 
