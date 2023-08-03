@@ -10,7 +10,7 @@ _putchar.c
 #Ignore files without extension 
 *.
 #Allow crackme file
-!101-password
+!10*
 
 #ignore object files
 *.o
