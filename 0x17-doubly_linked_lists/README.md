@@ -4,13 +4,11 @@
 - What is a doubly linked list
 - How to use doubly linked lists
 
-# Doubly Linked Lists in C
-
 # Doubly Linked Lists in C Programming
 
 ## Introduction
 
-Welcome to the Doubly Linked Lists in C Programming repository! In this resource, you'll find comprehensive information about doubly linked lists and how to work with them in the C programming language.
+Welcome to the Doubly Linked Lists in C Programming repository! In this repository are ALX SE exercise files under the topic.
 
 Doubly linked lists are a versatile and powerful data structure, allowing bidirectional traversal and efficient insertions and deletions. They are essential in various computer science and software engineering applications, making them a valuable concept to learn and master.
 
